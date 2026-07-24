@@ -2,7 +2,6 @@ AI THESIS ASSISTANT - TRỢ LÝ LUẬN VĂN KHOA HỌC
 
 Đây là dự án cá nhân mình xây dựng nhằm hỗ trợ sinh viên và nghiên cứu sinh tối ưu hóa quy trình đọc, hiểu và phân tích các bài báo khoa học (file PDF). 
 
-Hệ thống được viết hoàn toàn bằng Python và chạy trực tiếp trên giao diện Streamlit cực kỳ đơn giản và dễ cài đặt.
 
 ---
 
@@ -26,7 +25,7 @@ Các tính năng chính:
 
 Mình chọn các thư viện Python gọn nhẹ để dự án có thể chạy trực tiếp trên máy cá nhân:
 
-- Giao diện người dùng: Streamlit (UI nhanh bằng Python, đỡ phải code React/JS)
+- Giao diện người dùng: Streamlit (UI nhanh bằng Python)
 - Điều phối RAG: LangChain (Để gọi Gemini API và truy xuất dữ liệu từ vector database)
 - Cơ sở dữ liệu Vector: ChromaDB (Lưu dữ liệu vector cục bộ ngay trên máy)
 - Đọc PDF: PyMuPDF (Trích xuất văn bản từ file PDF rất nhanh và chính xác)
@@ -71,12 +70,11 @@ Bước 4: Chạy ứng dụng
 Khởi động Streamlit bằng lệnh:
 streamlit run app.py
 
-Ứng dụng sẽ tự động mở trên trình duyệt tại địa chỉ: http://localhost:8501
 
 ---
 
 5. HƯỚNG DẪN KIỂM THỬ VÀ LƯU Ý KHI CHẠY
 
 1. Tải tài liệu: Tại sidebar, bấm chọn và tải file PDF nghiên cứu khoa học lên. Đợi một chút để hệ thống đọc file.
-2. Hỏi đáp: Gõ câu hỏi của bạn ở ô chat dưới màn hình. Kiểm tra xem AI trả lời có đúng trọng tâm bài viết không và các thẻ trích dẫn nguồn có hiển thị chính xác không.
-3. Reset dữ liệu: Cả dữ liệu Vector database và lịch sử chat đều được lưu cục bộ trong thư mục dự án. Nếu muốn reset, bạn chỉ cần xóa các thư mục data tạo ra khi chạy.
+2. Hỏi đáp: Gõ câu hỏi của ở ô chat dưới màn hình. Kiểm tra xem AI trả lời có đúng trọng tâm bài viết không và các thẻ trích dẫn nguồn có hiển thị chính xác không.
+3. Reset dữ liệu: Cả dữ liệu Vector database và lịch sử chat đều được lưu cục bộ trong thư mục dự án. Nếu muốn reset, chỉ cần xóa các thư mục data tạo ra khi chạy.
