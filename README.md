@@ -26,7 +26,7 @@ Các tính năng mình đã hoàn thiện:
 
 Để tối giản và gọn nhẹ nhất, mình chọn các công nghệ chạy hoàn toàn bằng Python:
 
-- Giao diện người dùng: Streamlit (Dựng UI nhanh bằng Python, đỡ mất công code React/JS phức tạp)
+- Giao diện người dùng: Streamlit (Dựng UI nhanh bằng Python)
 - Xử lý RAG & Kết nối: LangChain (Làm cầu nối để gọi Gemini API và truy xuất dữ liệu từ database)
 - Cơ sở dữ liệu Vector: ChromaDB (Lưu dữ liệu vector cục bộ ngay trên thư mục dự án)
 - Trích xuất PDF: PyMuPDF (Đọc chữ từ file PDF cực nhanh và chuẩn)
