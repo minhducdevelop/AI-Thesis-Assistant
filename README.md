@@ -47,31 +47,16 @@ Các tính năng mình đã hoàn thiện:
 
 4. HƯỚNG DẪN CÀI ĐẶT VÀ CHẠY APP
 
-Các bạn làm theo các bước đơn giản này để chạy thử app trên máy nhé:
+Để chạy ứng dụng nhanh nhất trên Windows, mọi người có thể dùng các file script .bat mình đã viết sẵn ở thư mục gốc:
 
-Bước 1: Tạo môi trường ảo cho Python (tránh bị xung đột thư viện cài sẵn trên máy)
-python -m venv venv
+ Sử dụng Script chạy nhanh (nên dùng cho Windows)
+1. Kích đúp chuột vào file start_all.bat ở thư mục gốc.
+2. Script sẽ tự động:
+   - Mở cửa sổ Backend, kích hoạt môi trường ảo (venv), cài đặt thư viện và chạy máy chủ FastAPI tại cổng 8000.
+   - Mở cửa sổ Frontend, chạy npm install và khởi động React dev server tại cổng 3000.
+3. Sau đó, app sẽ tự động mở hoặc bạn truy cập địa chỉ đường dẫn
 
-Kích hoạt môi trường ảo lên:
-- Trên Windows:
-  .\venv\Scripts\activate
-- Trên macOS/Linux:
-  source venv/bin/activate
-
-Bước 2: Cài đặt các thư viện cần thiết
-Chạy lệnh sau:
-pip install -r requirements.txt
-
-Bước 3: Cấu hình API Key
-1. Nhân bản file .env.template thành file .env:
-   copy .env.template .env
-2. Mở file .env vừa tạo lên và dán mã Gemini API Key của bạn vào dòng:
-   GEMINI_API_KEY=your_gemini_api_key_here
-
-Bước 4: Chạy ứng dụng
-Khởi động giao diện Streamlit bằng lệnh:
-streamlit run app.py
-
+(Nếu muốn chạy riêng lẻ từng phần, có thể chạy file start_backend.bat hoặc start_frontend.bat)
 
 ---
 
